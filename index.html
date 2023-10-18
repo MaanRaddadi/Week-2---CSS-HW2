@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGRLE | Online Car Rental</title>
+    <script
+      src="https://kit.fontawesome.com/1f96fb7010.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="nav">
+      <img
+        class="logo"
+        src="/assets/agrle-low-resolution-logo-color-on-transparent-background.png"
+      />
+
+      <ul id="nav-list">
+        <li><i class="fa-solid fa-heart" style="color: #000000"></i></li>
+        <li>
+          <img
+            id="flag"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/1200px-Flag_of_Saudi_Arabia.svg.png"
+          />
+        </li>
+        <li>
+          <img
+            id="sign-in"
+            alt="sign-in"
+            src="/assets/Screenshot 2023-10-18 210857.png"
+          />
+        </li>
+      </ul>
+    </nav>
+    <section id="search-section">
+      <div id="background-img"></div>
+      <div class="search-input-container">
+        <input class="search-input search" placeholder="Search" type="text" />
+        <select id="select-input" class="search-input">
+          <option value="" disabled selected>Car Type</option>
+          <option value="Small">Small</option>
+          <option value="Medium">Medium</option>
+          <option value="Large">Large</option>
+          <option value="SUV">SUV</option>
+        </select>
+        <input
+          class="search-input date"
+          type="date"
+          placeholder="Pick-up Date"
+          onfocus="(this.type='date')"
+          onblur="(this.type='text')"
+        />
+        <button id="search-btn">search</button>
+      </div>
+    </section>
+
+    <section id="trending-section">
+      <div class="trending-text-container">
+        <h3>Trending Cars</h3>
+        <p>Available for Booking Today</p>
+
+        <div id="trending-cars-containter">
+          <div id="trending-car-card">
+            <img id="car-img" src="/assets/uni-k-website-pic.png" />
+            <h3 id="car-name">Changan UNI-K</h3>
+            <div class="car-feature">
+              <i class="fa-solid fa-person" style="color: #000000"></i>
+              <p>5</p>
+            </div>
+            <h4 id="car-price">150 S.R</h4>
+          </div>
+          <div id="trending-car-card">
+            <img id="car-img" src="/assets/Toyota_Corolla_LE_2022_1.jpg" />
+            <h3 id="car-name">Toyota Corolla</h3>
+            <div class="car-feature">
+              <i class="fa-solid fa-person" style="color: #000000"></i>
+              <p>4</p>
+            </div>
+            <h4 id="car-price">100 S.R</h4>
+          </div>
+          <div id="trending-car-card">
+            <img
+              id="car-img"
+              src="/assets/Luxury-red-sport-car-on-transparent-background-PNG.png"
+            />
+            <h3 id="car-name">Mazda CX5</h3>
+            <div class="car-feature">
+              <i class="fa-solid fa-person" style="color: #000000"></i>
+              <p>5</p>
+            </div>
+            <h4 id="car-price">200 S.R</h4>
+          </div>
+        </div>
+      </div>
+      <div id="show-all-container">
+        <button id="show-all">
+          <a style="font-weight: 800" href="carspage.html">Show All</a>
+        </button>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="company-info-container">
+        <a href="https://en.wikipedia.org/wiki/Car">About Us</a>
+        <a href="linkedin.com">Hiring</a>
+        <a href="https://feedly.com/">Blog</a>
+      </div>
+
+      <div class="company-info-container">
+        <a href="twitter.com"
+          ><i class="fa-brands fa-x-twitter" style="color: #ffffff"></i
+        ></a>
+        <a href="facebook.com"
+          ><i class="fa-brands fa-square-facebook" style="color: #ffffff"></i
+        ></a>
+        <a href="tel:123-456-7890"
+          ><i class="fa-solid fa-phone" style="color: #ffffff"></i
+        ></a>
+        <a href="mailto:maan.raddadi@gmail.com"
+          ><i class="fa-solid fa-envelope" style="color: #ffffff"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

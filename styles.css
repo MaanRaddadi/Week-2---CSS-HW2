@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+#nav {
+  width: 100vw;
+  height: 15vh;
+  background-color: #de1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+
+.logo {
+  width: 200px;
+  margin: 10px;
+}
+#flag {
+  width: 30px;
+  border-radius: 5px;
+}
+
+#nav-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+#nav-list li {
+  display: inline;
+  padding: 20px;
+}
+
+#sign-in {
+  width: 100px;
+}
+
+#search-section {
+  height: 80vh;
+  background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_13/2798361/190325-rental-cars-cs-229p.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 90px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.search-input {
+  background-color: #e8ebf7;
+  border: none;
+  border-radius: 15px;
+  height: 80%;
+  width: 200px;
+  padding-left: 20px;
+}
+
+.search {
+  width: 300px;
+}
+
+#select-input {
+  background-color: #e8ebf7;
+  border: none;
+  border-radius: 15px;
+}
+
+#search-btn {
+  background-color: #de1a1a;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Poppins";
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.trending-text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.trending-text-container h3 {
+  font-weight: bold;
+  text-align: left;
+}
+#trending-cars-containter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+#trending-car-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8ebf7;
+  width: 320px;
+  border-radius: 15px;
+  padding: 20px;
+}
+#car-img {
+  min-width: 280px;
+  height: 250px;
+  object-fit: contain;
+}
+#car-name {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.car-feature {
+  display: flex;
+}
+.car-feature i {
+  font-size: 1.3em;
+  padding-right: 10px;
+}
+#car-price {
+  background-color: white;
+  font-weight: 800;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  width: 90px;
+  margin-top: 10px;
+}
+
+#footer {
+  background-color: #de1a1a;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 10px;
+}
+.company-info-container {
+  display: flex;
+}
+
+.company-info-container a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+#show-all-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#show-all {
+  background-color: #de1a1a;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-family: "Poppins";
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15px;
+}
+#show-all a {
+  text-decoration: none;
+  color: white;
+}
+
+/** Cars Page **/
+#filters {
+  background-color: #e8ebf7;
+}
+#car-type {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.filter-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: 2px solid black;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  width: 102px;
+  height: 104px;
+}
+
+.filter-card img {
+  width: 70px;
+  max-width: 50px;
+}
+#cars {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+.car-card {
+  display: flex;
+  gap: 20px;
+  background-color: #e8ebf7;
+  border-radius: 15px;
+  width: 650px;
+}
+
+.car-card-img {
+  width: 170px;
+  height: 200px;
+  object-fit: contain;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.car-card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.car-card-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.car-specs {
+  display: flex;
+}
+
+.cent {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.car-count p {
+  padding-right: 5px;
+}
+
+.pick-up p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding-left: 5px;
+}
+.delivery p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+.car-card-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.car-card-price p {
+  font-weight: 800;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+.car-card-price a {
+  background-color: #de1a1a;
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+  font-weight: 800;
+}
+
+/** Checkout page **/
+
+#checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.checkout-card {
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 7px solid red;
+}
+
+.img-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-date img {
+  width: 350px;
+  height: 200px;
+  object-fit: contain;
+}
+.img-date p {
+  text-align: left;
+  font-weight: 800;
+}
+.price {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.price-total p {
+  font-weight: 800;
+}
+
+.price a {
+  background-color: #de1a1a;
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+}
